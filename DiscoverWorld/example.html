@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nishant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        section article {
+            height: 100%;
+            flex: 7;
+            display: flex;
+            flex-direction: row;
+            background-color: #333;
+            color: #f1f1f1;
+            align-items: center;
+        }
+
+        section article p {
+            padding: 1rem 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.1rem;
+        }
+
+        section article p:nth-child(1) {
+            text-align: left;
+        }
+
+        section article p:nth-child(2) {
+            text-align: center;
+        }
+
+        section article p:nth-child(3) {
+            text-align: right;
+        }
+
+        section article p:nth-child(1)::first-letter,
+        section article p:nth-child(2)::first-letter,
+        section article p:nth-child(3)::first-letter {
+            font-size: 3rem;
+        }
+
+        section aside {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+        }
+
+        section aside img {
+            width: 100%;
+            height: auto;
+            border-left: 3px solid aquamarine;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #333;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(75deg, blue, skyblue);
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <p title="first">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aspernatur, officiis voluptatem
+                veritatis fugit, ullam quo voluptatibus cum illo quis iste, eligendi error libero tenetur adipisci
+                commodi corporis quasi veniam!
+            </p>
+            <p title="second">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum atque nostrum similique, provident
+                error quo praesentium eveniet! Fugiat deleniti quod magnam architecto sed doloremque! Doloremque odio
+                alias aut est.
+            </p>
+            <p title="third">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati perspiciatis
+                reiciendis culpa cumque distinctio, corporis quos voluptas quidem itaque excepturi deserunt, laboriosam
+                et esse quas fugiat. Earum, nobis quasi.
+            </p>
+        </article>
+        <aside>
+            <img src="./img/discoverplanet.jpg" alt="Discover">
+            <img src="./img/discoverplanet.jpg" alt="Discover">
+            <img src="./img/discoverplanet.jpg" alt="Discover">
+        </aside>
+    </section>
+    <section>
+
+    </section>
+</body>
+
+</html>

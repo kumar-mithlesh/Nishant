@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discover World</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body onload="getCountry()">
+    <header class="home-header">
+        <div>
+            <h1>Discover World</h1>
+            <span onclick="randomCountry()"><img src="./img/globe-solid.svg" alt="globe-solid"></span>
+        </div>
+    </header>
+    <section id="outputScreen">
+        <div>
+            <div id="countryName"></div>
+            <div id="subRegion"></div>
+            <div id="region"></div>
+            <div id="region"></div>
+            <div id="population"></div>
+        </div>
+    </section>
+    <section>
+        <div id="location"></div>
+    </section>
+    <script src="./js/main.js"></script>
+    <script src="./js/linkedlist.js"></script>
+</body>
+
+</html>
